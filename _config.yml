@@ -41,3 +41,13 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Minima > 3.0:
+# minima:
+#   social_links:
+#     twitter: johntellsall
+#     github: johntellsall
+#     stackoverflow: "11111"
+#     youtube: johntellsall
+#     youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+#     youtube_channel_name: CloudCannon
