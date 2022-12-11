@@ -15,12 +15,14 @@ endef
 
 build:
 	$(call run_jekyll, jekyll build)
+watch:
+	$(call run_jekyll, jekyll build --watch)
 
 # docker run --name newblog --volume="$PWD:/srv/jekyll" 
 # 	-p 3000:4000 -it jekyll/jekyll:$JEKYLL_VERSION 
 # 	jekyll serve --watch --drafts
 
-serve:
+run:
 	docker run --rm --volume="${PWD}:/srv/jekyll" \
 	-p 4000:4000 -it \
 	jekyll/jekyll:$(JEKYLL_VERSION)  \
